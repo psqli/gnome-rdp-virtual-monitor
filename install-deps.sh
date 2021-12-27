@@ -7,7 +7,7 @@ exit_error() {
 }
 
 [ "$(id -u)" -ne 0 ] && exit_error "run with sudo"
-[ "$(id -r)" -eq 0 ] && echo "WARNING: Real User ID is 0 (root)."
+[ "$(id -ur)" -eq 0 ] && echo "WARNING: Real User ID is 0 (root)."
 
 # Install dependencies
 echo "Installing dependencies"
