@@ -10,7 +10,7 @@ exit_error() {
 }
 
 # Create config directory and cd to it
-echo "Creating config directory (${$rdp_cfg_path})"
+echo "Creating config directory (${rdp_cfg_path})"
 mkdir -p $rdp_cfg_path && cd $rdp_cfg_path
 [ $? -ne 0 ] && exit_error "Error while creating directory"
 

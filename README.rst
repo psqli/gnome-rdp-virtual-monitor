@@ -8,8 +8,8 @@ install-deps.sh
 	following programs/scripts.
 
 gnome-rdp-setup.sh
-	Configure and start the Gnome RDP server for accepting connections
-	from the network. It uses virtual monitors by default.
+	Configure the Gnome RDP server and set up the virtual monitor
+        (with `gnome-add-virtual-monitor.sh`).
 
 gnome-rdp-set-creds.sh
         Configure username and password for RDP.
