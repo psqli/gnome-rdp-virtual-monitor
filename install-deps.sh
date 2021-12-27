@@ -11,7 +11,7 @@ exit_error() {
 
 # Install dependencies
 echo "Installing dependencies"
-   { command -v apt && apt install gcc openssl libsecret-1-dev gnome-remote-desktop dconf-cli libglib2.0-bin; } \
-|| { command -v dnf && dnf install gcc openssl libsecret-devel gnome-remote-desktop dconf glib2;     } \
-|| { command -v pacman && pacman -S gcc openssl libsecret gnome-remote-desktop dconf glib2;     }
+   { command -v apt && apt install openssl libsecret-tools gnome-remote-desktop dconf-cli libglib2.0-bin; } \
+|| { command -v dnf && dnf install openssl libsecret gnome-remote-desktop dconf glib2;     } \
+|| { command -v pacman && pacman -S openssl libsecret gnome-remote-desktop dconf glib2;     }
 [ $? -ne 0 ] && exit_error "Error while installing dependencies"
