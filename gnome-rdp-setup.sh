@@ -9,11 +9,6 @@ exit_error() {
 	exit 1
 }
 
-# Build helper for setting credentials
-echo "Building program for setting RDP credentials"
-gcc grd_rdp_credentials.c -o set-rdp-creds $(pkg-config --libs --cflags libsecret-1)
-[ $? -ne 0 ] && exit_error "Error while building credentials helper"
-
 # Create config directory and cd to it
 echo "Creating config directory (${$rdp_cfg_path})"
 mkdir -p $rdp_cfg_path && cd $rdp_cfg_path

@@ -7,9 +7,12 @@ install-deps.sh
 	Install dependencies needed for Gnome Remote Desktop, and by the
 	following programs/scripts.
 
-gnome-rdp-setup
+gnome-rdp-setup.sh
 	Configure and start the Gnome RDP server for accepting connections
 	from the network. It uses virtual monitors by default.
+
+gnome-rdp-set-creds.sh
+        Configure username and password for RDP.
 
 gnome-add-virtual-monitor.sh
 	Creates a new virtual monitor. Run the command with `-h` option to
